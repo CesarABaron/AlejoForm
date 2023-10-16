@@ -5,6 +5,7 @@
 
     flex-direction: column;
 
+padding: 20%;
 }
 
 
@@ -21,13 +22,22 @@
 
 .input{
     height: 10%;
-    width: 93%;
+    width: 92%;
     padding-left: 3%;
     
 }
 
 .submit{
     margin-top: 5%;
+    height: 5vh;
+    width: 49vh;
+    background-color: pink;
+    border: none;
+}
+
+
+.submit:hover{
+    background-color: red;
 }
 
 .text{
