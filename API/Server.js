@@ -4,10 +4,8 @@ const router = require("./src/Routes/index");
 const express = require("express");
 
 const app = express();
-
-app.use("/", router);
-
 app.use(express.json());
+app.use("/", router);
 
 const PORT = process.env.PORT || 6000;
 
