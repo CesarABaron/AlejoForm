@@ -4,6 +4,9 @@ import styles from "../src/App.module.css";
 import "./App.css";
 
 function App() {
+  alert(
+    "falta colocar los diseños y validadores, crear el gmail y sacarle la cuenta de app y ya esta listo perro"
+  );
   // const whatsapp = "https://api.whatsapp.com/send/";   por si vamos a colocar contactanos al wahtsapp
   const [input, setInput] = useState({ Email: "", Tlf: "" });
 
