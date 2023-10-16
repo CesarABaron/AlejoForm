@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import styles from "../src/App.module.css";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className={styles.container}>
+      <h1>Formulario</h1>
+      <form className={styles.form}>
+        <label className={styles.text}> Ingresa tu correo Electronico: </label>
+        <input
+          type="email"
+          placeholder="tucorreo@Gmail.com"
+          className={styles.input}
+        ></input>
+        <label className={styles.text}> Ingresa tu numero Celular: </label>
+        <input
+          type="text"
+          placeholder="+57 310 1234567"
+          className={styles.input}
+        ></input>
+        <button className={styles.submit} type="submit">
+          Solicitar Cita
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </form>
+    </div>
+  );
 }
-
-export default App
+export default App;
