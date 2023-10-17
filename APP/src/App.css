@@ -1,19 +1,20 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
